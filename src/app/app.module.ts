@@ -5,16 +5,16 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomepageComponent } from './homepage/homepage.component';
+import { CurriculumComponent } from './curriculum/curriculum.component';
 const appRoutes: Routes = [
   {
-    path: 'home', component:HomepageComponent
+    path: 'Curriculum', component:CurriculumComponent
   }
 ];
 @NgModule({
   declarations: [
     AppComponent,
-    HomepageComponent
+    CurriculumComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes, {enableTracing: true}),
