@@ -1,0 +1,20 @@
+nav{
+    ul{
+        padding: 0;
+    }
+    li{
+        list-style: none;
+        display: inline-block;
+        .logo{
+            width: 200px;
+        }
+        a{
+            margin: 10px;
+            color: #005AAA;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        margin: 10px;
+        
+    }
+}
