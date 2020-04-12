@@ -1,13 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { MatMenuModule, MatExpansionModule, MatIcon} from '@angular/material';
+
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CurriculumComponent } from './curriculum/curriculum.component';
-import { NavEnComponent } from './nav-en/nav-en.component';
-import { NavNlComponent } from './nav-nl/nav-nl.component';
+import { NavEnComponent } from './header/nav-en/nav-en.component';
+import { NavNlComponent } from './header/nav-nl/nav-nl.component';
 import { HomeNlComponent } from './home-nl/home-nl.component';
 import { HomeEnComponent } from './home-en/home-en.component';
 import { KlassenComponent } from './klassen/klassen.component';
@@ -21,6 +23,7 @@ import { KlasINF1GComponent } from './klassen/klas-inf1-g/klas-inf1-g.component'
 import { KlasINF1HComponent } from './klassen/klas-inf1-h/klas-inf1-h.component';
 import { KlasINF1IComponent } from './klassen/klas-inf1-i/klas-inf1-i.component';
 import { KlasINF1JComponent } from './klassen/klas-inf1-j/klas-inf1-j.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 const appRoutes: Routes = [
   {
     path: '', component:HomeNlComponent
@@ -35,6 +38,7 @@ const appRoutes: Routes = [
 ];
 @NgModule({
   declarations: [
+    
     AppComponent,
     CurriculumComponent,
     NavEnComponent,
@@ -55,8 +59,11 @@ const appRoutes: Routes = [
   ],
   imports: [
     RouterModule.forRoot(appRoutes, {enableTracing: true}),
+    MatExpansionModule,
+    MatMenuModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

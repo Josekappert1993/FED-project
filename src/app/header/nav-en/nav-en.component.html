@@ -1,0 +1,48 @@
+<nav>
+    <a href="/"><img class="logo" src="assets/images/Logo.png" alt="logo"></a> <button class="right open" (click)="toggle('open')"><img src="assets/images/arrow.png" alt="arrow"></button>
+    
+    <ul class="navigation" *ngIf="open">
+        <li><button href="group" (click)="toggle('group')">Group  <img src="assets/images/arrow.png" alt="arrow" ></button>
+            <ul *ngIf="group">
+                <li><a href="group-IT1A">IT1A</a></li>
+                <li><a href="group-IT1B">IT1B</a></li>
+                <li><a href="group-IT1C">IT1C</a></li>
+                <li><a href="group-IT1D">IT1D</a></li>
+                <li><a href="group-IT1E">IT1E</a></li>
+                <li><a href="group-IT1F">IT1F</a></li>
+            </ul>
+        </li>
+        <li><button href="schedule" class="schedule" (click)="toggle('schedule')">Schedule <img src="assets/images/arrow.png" alt="arrow"></button>
+            <ul *ngIf="schedule">
+                <li><a href="rooster-INF1A">INF1A</a></li>
+                <li><a href="rooster-INF1B">INF1B</a></li>
+                <li><a href="rooster-INF1C">INF1C</a></li>
+                <li><a href="rooster-INF1D">INF1D</a></li>
+                <li><a href="rooster-INF1E">INF1E</a></li>
+                <li><a href="rooster-INF1F1">INF1F1</a></li>
+                <li><a href="rooster-INF1G">INF1G</a></li>
+                <li><a href="rooster-INF1H">INF1H</a></li>
+                <li><a href="rooster-INF1I">INF1I</a></li>
+                <li><a href="rooster-INF1J">INF1J</a></li>
+            </ul>
+        </li>
+        <li><button href="vakken" (click)="toggle('vak')">Vakken  <img src="assets/images/arrow.png" alt="arrow"></button>
+            <ul *ngIf="vak">
+                <li><a href="INF1A">INF1A</a></li>
+                <li><a href="INF1B">INF1B</a></li>
+                <li><a href="INF1C">INF1C</a></li>
+                <li><a href="INF1D">INF1D</a></li>
+                <li><a href="INF1E">INF1E</a></li>
+                <li><a href="INF1F1">INF1F1</a></li>
+                <li><a href="INF1G">INF1G</a></li>
+                <li><a href="INF1H">INF1H</a></li>
+                <li><a href="INF1I">INF1I</a></li>
+                <li><a href="INF1J">INF1J</a></li>
+            </ul>
+        </li>
+        <li><a href="docenten">Docenten</a></li>
+        <li><a href="Curriculum-nl">Curriculum</a></li>
+        <li><a href="mededelingen">Mededelingen</a></li>
+    </ul>
+</nav>
+

@@ -1,8 +1,9 @@
 <nav>
-    <ul>
-        <li><a href="/"><img class="logo" src="assets/images/Logo.png" alt="logo"></a></li>
-        <li><a href="klassen">Klassen  <img src="assets/images/arrow.png" alt="arrow"></a>
-            <ul class="foldout-menu">
+    <a href="/"><img class="logo" src="assets/images/Logo.png" alt="logo"></a> <button class="right open" (click)="toggle('open')"><img src="assets/images/arrow.png" alt="arrow"></button>
+    
+    <ul class="navigation" *ngIf="open">
+        <li><button href="klassen" (click)="toggle('group')">Klassen  <img src="assets/images/arrow.png" alt="arrow" ></button>
+            <ul *ngIf="group">
                 <li><a href="klas-INF1A">INF1A</a></li>
                 <li><a href="klas-INF1B">INF1B</a></li>
                 <li><a href="klas-INF1C">INF1C</a></li>
@@ -15,8 +16,8 @@
                 <li><a href="klas-INF1J">INF1J</a></li>
             </ul>
         </li>
-        <li><a href="roosters" class="rooster">Roosters <img src="assets/images/arrow.png" alt="arrow"></a>
-            <ul class="foldout-menu">
+        <li><button href="roosters" class="rooster" (click)="toggle('schedule')">Roosters <img src="assets/images/arrow.png" alt="arrow"></button>
+            <ul *ngIf="schedule">
                 <li><a href="rooster-INF1A">INF1A</a></li>
                 <li><a href="rooster-INF1B">INF1B</a></li>
                 <li><a href="rooster-INF1C">INF1C</a></li>
@@ -29,8 +30,8 @@
                 <li><a href="rooster-INF1J">INF1J</a></li>
             </ul>
         </li>
-        <li><a href="vakken">Vakken  <img src="assets/images/arrow.png" alt="arrow"></a>
-            <ul class="foldout-menu">
+        <li><button href="vakken" (click)="toggle('vak')">Vakken  <img src="assets/images/arrow.png" alt="arrow"></button>
+            <ul *ngIf="vak">
                 <li><a href="INF1A">INF1A</a></li>
                 <li><a href="INF1B">INF1B</a></li>
                 <li><a href="INF1C">INF1C</a></li>
@@ -48,3 +49,4 @@
         <li><a href="mededelingen">Mededelingen</a></li>
     </ul>
 </nav>
+

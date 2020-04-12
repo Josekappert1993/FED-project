@@ -1,0 +1,39 @@
+nav{
+    
+        .logo{
+            width: 200px;
+        }
+        .navigation{
+            display: block;
+        }
+        ul{
+            padding: 0;
+            margin: 0;
+            
+        }
+        li{
+            
+            list-style: none;
+            padding-left: 10px;
+            border-bottom: thin #005AAA solid;
+        }
+        a, button{
+            padding: 0;
+            margin: 10px;
+            color: #005AAA;
+            font-weight: bold;
+            text-decoration: none;
+            font-family: calibri,sans-serif;
+            font-weight: 700;
+            font-size: 25px;
+            font-style: normal;
+            border: none;
+            background-color: white;
+            margin: 0;
+            
+        }
+        .right{
+            float: right;
+            padding-right: 10px;
+        }
+}
