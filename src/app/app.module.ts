@@ -58,6 +58,8 @@ import { InformatiemanagementComponent } from './content/vakken/informatiemanage
 import { Java1Component } from './content/vakken/java1/java1.component';
 import { MondelingeCommunicatieComponent } from './content/vakken/mondelinge-communicatie/mondelinge-communicatie.component';
 import { MultimediaproductieComponent } from './content/vakken/multimediaproductie/multimediaproductie.component';
+import { DocentenComponent } from './content/docenten/docenten.component';
+import { MededelingenComponent } from './content/mededelingen/mededelingen.component';
 const appRoutes: Routes = [
   {
     path: '', component:HomeNlComponent
@@ -98,6 +100,45 @@ const appRoutes: Routes = [
   {
     path: 'klas-INF1J', component:KlasINF1JComponent
   },
+  {
+    path: 'roosters', component:RoostersComponent
+  },
+  {
+    path: 'rooster-INF1A', component:RoosterINF1AComponent
+  },
+  {
+    path: 'rooster-INF1B', component:RoosterINF1BComponent
+  },
+  {
+    path: 'rooster-INF1C', component:RoosterINF1CComponent
+  },
+  {
+    path: 'rooster-INF1D', component:RoosterINF1DComponent
+  },
+  {
+    path: 'rooster-INF1E', component:RoosterINF1EComponent
+  },
+  {
+    path: 'rooster-INF1F1', component:KlasINF1FComponent
+  },
+  {
+    path: 'rooster-INF1G', component:RoosterINF1GComponent
+  },
+  {
+    path: 'rooster-INF1H', component:RoosterINF1HComponent
+  },
+  {
+    path: 'rooster-INF1I', component:RoosterINF1IComponent
+  },
+  {
+    path: 'rooster-INF1J', component:RoosterINF1JComponent
+  },
+  {    
+    path: 'docenten', component:DocentenComponent
+  },
+  {    
+    path: 'mededelingen', component:MededelingenComponent
+  },
   {    
     path: 'Curriculum-nl', component:CurriculumComponent
   },
@@ -128,6 +169,29 @@ const appRoutes: Routes = [
     KlasINF1HComponent,
     KlasINF1IComponent,
     KlasINF1JComponent,
+    RoostersComponent,
+    RoosterINF1AComponent,
+    RoosterINF1BComponent,
+    RoosterINF1CComponent,
+    RoosterINF1DComponent,
+    RoosterINF1EComponent,
+    RoosterINF1F1Component,
+    RoosterINF1GComponent,
+    RoosterINF1HComponent,
+    RoosterINF1IComponent,
+    RoosterINF1JComponent,
+    VakkenComponent,
+    PHP1Component,
+    CSharp1Component,
+    Database1Component,
+    FED1Component,
+    HTMLComponent,
+    InformatiemanagementComponent,
+    Java1Component,
+    MondelingeCommunicatieComponent,
+    MultimediaproductieComponent,
+    DocentenComponent,
+    MededelingenComponent,
     GroupsComponent,
     GroupIT1AComponent,
     GroupIT1BComponent,
