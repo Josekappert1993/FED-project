@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component } from '@angular/core';
 
-import { MatMenuModule, MatExpansionModule, MatIcon} from '@angular/material';
+import { MatMenuModule, MatExpansionModule } from '@angular/material';
 
 import { RouterModule, Routes } from '@angular/router';
 
@@ -63,7 +63,40 @@ const appRoutes: Routes = [
     path: '', component:HomeNlComponent
   },
   {
-    path: 'home-nl', component:HomeEnComponent
+    path: 'home-nl', component:HomeNlComponent
+  },
+  {
+    path: 'klassen', component:KlassenComponent
+  },
+  {
+    path: 'klas-INF1A', component:KlasINF1AComponent
+  },
+  {
+    path: 'klas-INF1B', component:KlasINF1BComponent
+  },
+  {
+    path: 'klas-INF1C', component:KlasINF1CComponent
+  },
+  {
+    path: 'klas-INF1D', component:KlasINF1DComponent
+  },
+  {
+    path: 'klas-INF1E', component:KlasINF1EComponent
+  },
+  {
+    path: 'klas-INF1F', component:KlasINF1FComponent
+  },
+  {
+    path: 'klas-INF1G', component:KlasINF1GComponent
+  },
+  {
+    path: 'klas-INF1H', component:KlasINF1HComponent
+  },
+  {
+    path: 'klas-INF1I', component:KlasINF1IComponent
+  },
+  {
+    path: 'klas-INF1J', component:KlasINF1JComponent
   },
   {    
     path: 'Curriculum-nl', component:CurriculumComponent

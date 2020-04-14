@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavNlComponent implements OnInit {
 
-  public open:boolean = true;
+  public open:boolean = false;
   public group:boolean = false;
   public schedule:boolean = false;
   public vak:boolean = false;
@@ -24,6 +24,13 @@ export class NavNlComponent implements OnInit {
         this.group = true;
       }else{
         this.group = false;
+      }
+    }
+    else if(show == "open"){
+      if(!this.open){
+        this.open = true;
+      }else{
+        this.open = false;
       }
     }
     
@@ -51,13 +58,7 @@ export class NavNlComponent implements OnInit {
       }
     }
 
-    else if(show == "open"){
-      if(!this.open){
-        this.open = true;
-      }else{
-        this.open = false;
-      }
-    }
+    
 
   }
 
