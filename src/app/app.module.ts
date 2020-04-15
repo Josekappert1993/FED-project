@@ -62,23 +62,6 @@ import { GroupIT1JComponent } from './content/en/groups/group-it1-j/group-it1-j.
 import { CurriculumEnComponent } from './content/en/curriculum-en/curriculum-en.component';
 
 import { ClassesComponent } from './content/en/classes/classes.component';
-<<<<<<< HEAD
-import { SchedulesComponent } from './content/en/schedules/schedules.component';
-import { ScheduleIT1AComponent } from './content/en/schedules/schedule-it1-a/schedule-it1-a.component';
-import { ScheduleIT1BComponent } from './content/en/schedules/schedule-it1-b/schedule-it1-b.component';
-import { ScheduleIT1CComponent } from './content/en/schedules/schedule-it1-c/schedule-it1-c.component';
-import { ScheduleIT1DComponent } from './content/en/schedules/schedule-it1-d/schedule-it1-d.component';
-import { ScheduleIT1EComponent } from './content/en/schedules/schedule-it1-e/schedule-it1-e.component';
-import { ScheduleIT1F1Component } from './content/en/schedules/schedule-it1-f1/schedule-it1-f1.component';
-import { ScheduleIT1FF2Component } from './content/en/schedules/schedule-it1-ff2/schedule-it1-ff2.component';
-import { ScheduleIT1GComponent } from './content/en/schedules/schedule-it1-g/schedule-it1-g.component';
-import { ScheduleIT1HComponent } from './content/en/schedules/schedule-it1-h/schedule-it1-h.component';
-import { ScheduleIT1IComponent } from './content/en/schedules/schedule-it1-i/schedule-it1-i.component';
-import { ScheduleIT1JComponent } from './content/en/schedules/schedule-it1-j/schedule-it1-j.component';
-import { TeachersComponent } from './content/en/teachers/teachers.component';
-
-=======
->>>>>>> parent of 1573936... Nederlandse menu werkt volledig
 const appRoutes: Routes = [
   {
     path: '', component:HomeNlComponent
@@ -227,25 +210,7 @@ const appRoutes: Routes = [
     GroupIT1HComponent,
     GroupIT1IComponent,
     GroupIT1JComponent,
-    CurriculumEnComponent,
-<<<<<<< HEAD
-    ClassesComponent,
-    SchedulesComponent,
-    ScheduleIT1AComponent,
-    ScheduleIT1BComponent,
-    ScheduleIT1CComponent,
-    ScheduleIT1DComponent,
-    ScheduleIT1EComponent,
-    ScheduleIT1F1Component,
-    ScheduleIT1FF2Component,
-    ScheduleIT1GComponent,
-    ScheduleIT1HComponent,
-    ScheduleIT1IComponent,
-    ScheduleIT1JComponent,
-    TeachersComponent
-=======
-    ClassesComponent
->>>>>>> parent of 1573936... Nederlandse menu werkt volledig
+    CurriculumEnComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes, {enableTracing: true}),
