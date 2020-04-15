@@ -84,6 +84,7 @@ import { ScheduleIT1GComponent } from './content/en/schedules/schedule-it1-g/sch
 import { ScheduleIT1HComponent } from './content/en/schedules/schedule-it1-h/schedule-it1-h.component';
 import { ScheduleIT1IComponent } from './content/en/schedules/schedule-it1-i/schedule-it1-i.component';
 import { ScheduleIT1JComponent } from './content/en/schedules/schedule-it1-j/schedule-it1-j.component';
+import { TeachersComponent } from './content/en/teachers/teachers.component';
 
 const appRoutes: Routes = [
   {
@@ -351,7 +352,8 @@ const appRoutes: Routes = [
     ScheduleIT1GComponent,
     ScheduleIT1HComponent,
     ScheduleIT1IComponent,
-    ScheduleIT1JComponent
+    ScheduleIT1JComponent,
+    TeachersComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes, {enableTracing: true}),
