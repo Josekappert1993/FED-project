@@ -44,19 +44,9 @@ import { InformatiemanagementComponent } from './content/nl/vakken/informatieman
 import { Java1Component } from './content/nl/vakken/java1/java1.component';
 import { MondelingeCommunicatieComponent } from './content/nl/vakken/mondelinge-communicatie/mondelinge-communicatie.component';
 import { MultimediaproductieComponent } from './content/nl/vakken/multimediaproductie/multimediaproductie.component';
-import { Netwerken1Component } from './content/nl/vakken/netwerken1/netwerken1.component';
-import { PHP2Component } from './content/nl/vakken/php2/php2.component';
-import { ProjectBattleBotComponent } from './content/nl/vakken/project-battle-bot/project-battle-bot.component';
-import { ProjectDigitaalPortfolioComponent } from './content/nl/vakken/project-digitaal-portfolio/project-digitaal-portfolio.component';
-import { ProjectInnovateComponent } from './content/nl/vakken/project-innovate/project-innovate.component';
-import { ProjectProfessioneleWebsiteComponent } from './content/nl/vakken/project-professionele-website/project-professionele-website.component';
-import { SchriftelijkeCommunicatieComponent } from './content/nl/vakken/schriftelijke-communicatie/schriftelijke-communicatie.component';
-import { SLB1AComponent } from './content/nl/vakken/slb1-a/slb1-a.component';
-import { WIS1Component } from './content/nl/vakken/wis1/wis1.component';
 import { DocentenComponent } from './content/nl/docenten/docenten.component';
 import { MededelingenComponent } from './content/nl/mededelingen/mededelingen.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-//Engelse versie
 import { GroupsComponent } from './content/en/groups/groups.component';
 import { GroupIT1AComponent } from './content/en/groups/group-it1-a/group-it1-a.component';
 import { GroupIT1BComponent } from './content/en/groups/group-it1-b/group-it1-b.component';
@@ -72,6 +62,7 @@ import { GroupIT1JComponent } from './content/en/groups/group-it1-j/group-it1-j.
 import { CurriculumEnComponent } from './content/en/curriculum-en/curriculum-en.component';
 
 import { ClassesComponent } from './content/en/classes/classes.component';
+<<<<<<< HEAD
 import { SchedulesComponent } from './content/en/schedules/schedules.component';
 import { ScheduleIT1AComponent } from './content/en/schedules/schedule-it1-a/schedule-it1-a.component';
 import { ScheduleIT1BComponent } from './content/en/schedules/schedule-it1-b/schedule-it1-b.component';
@@ -86,6 +77,8 @@ import { ScheduleIT1IComponent } from './content/en/schedules/schedule-it1-i/sch
 import { ScheduleIT1JComponent } from './content/en/schedules/schedule-it1-j/schedule-it1-j.component';
 import { TeachersComponent } from './content/en/teachers/teachers.component';
 
+=======
+>>>>>>> parent of 1573936... Nederlandse menu werkt volledig
 const appRoutes: Routes = [
   {
     path: '', component:HomeNlComponent
@@ -159,63 +152,6 @@ const appRoutes: Routes = [
   {
     path: 'rooster-INF1J', component:RoosterINF1JComponent
   },
-  {
-    path: 'vakken', component:VakkenComponent
-  },
-  {
-    path: 'csharp1',component:CSharp1Component
-  },
-  {
-    path: 'database1', component:Database1Component
-  },
-  {
-    path: 'FED1', component:FED1Component
-  },
-  {
-    path: 'html', component: HTMLComponent
-  },
-  {
-    path: 'Informatiemanagement', component:InformatiemanagementComponent
-  },
-  {
-    path: 'java1', component:Java1Component
-  },
-  {
-    path: 'mondelinge-communicatie', component:MondelingeCommunicatieComponent
-  },
-  {
-    path: 'multimediaproductie', component:MultimediaproductieComponent
-  },
-  {
-    path: 'netwerken1', component:Netwerken1Component
-  },
-  {
-    path: 'php1', component: PHP1Component
-  },
-  {
-    path: 'php2', component:PHP2Component
-  },
-  {
-    path:'ProjectBattleBot', component:ProjectBattleBotComponent
-  },
-  {
-    path: 'ProjectDigitaalPortfolio', component:ProjectDigitaalPortfolioComponent
-  },
-  {
-    path: 'ProjectInnovate',component:ProjectInnovateComponent
-  },
-  {
-    path: 'ProjectProfessioneleWebsite', component:ProjectProfessioneleWebsiteComponent
-  },
-  {
-    path:'SchriftelijkeCommunicatie', component: SchriftelijkeCommunicatieComponent
-  },
-  {
-    path:'SLB1A', component: SLB1AComponent
-  },
-  {
-    path: 'wis1', component: WIS1Component
-  },
   {    
     path: 'docenten', component:DocentenComponent
   },
@@ -231,45 +167,6 @@ const appRoutes: Routes = [
   },
   {
     path: 'group-en', component:GroupsComponent
-  },
-  {
-    path: 'group-IT1A', component:GroupIT1AComponent
-  },
-  {
-    path: 'group-IT1B', component:GroupIT1BComponent
-  },
-  {
-    path: 'group-IT1C', component:GroupIT1CComponent
-  },
-  {
-    path: 'group-IT1D', component:GroupIT1DComponent
-  },
-  {
-    path: 'group-IT1E', component:GroupIT1EComponent
-  },
-  {
-    path: 'group-IT1F', component:GroupIT1F1Component
-  },
-  {
-    path: 'schedules-en', component:SchedulesComponent
-  },
-  {
-    path: 'schedule-IT1A', component:ScheduleIT1AComponent
-  },
-  {
-    path: 'schedule-IT1B', component:ScheduleIT1BComponent
-  },
-  {
-    path: 'schedule-IT1C', component:ScheduleIT1CComponent
-  },
-  {
-    path: 'schedule-IT1D', component:ScheduleIT1DComponent
-  },
-  {
-    path: 'schedule-IT1E', component:ScheduleIT1EComponent
-  },
-  {
-    path: 'schedule-IT1F', component:ScheduleIT1F1Component
   },
   {    
     path: 'Curriculum-en', component:CurriculumEnComponent
@@ -307,6 +204,7 @@ const appRoutes: Routes = [
     RoosterINF1IComponent,
     RoosterINF1JComponent,
     VakkenComponent,
+    PHP1Component,
     CSharp1Component,
     Database1Component,
     FED1Component,
@@ -315,16 +213,6 @@ const appRoutes: Routes = [
     Java1Component,
     MondelingeCommunicatieComponent,
     MultimediaproductieComponent,
-    Netwerken1Component,
-    PHP1Component,
-    PHP2Component,
-    ProjectBattleBotComponent,
-    ProjectDigitaalPortfolioComponent,
-    ProjectInnovateComponent,
-    ProjectProfessioneleWebsiteComponent,
-    SchriftelijkeCommunicatieComponent,
-    SLB1AComponent,
-    WIS1Component,
     DocentenComponent,
     MededelingenComponent,
     GroupsComponent,
@@ -340,6 +228,7 @@ const appRoutes: Routes = [
     GroupIT1IComponent,
     GroupIT1JComponent,
     CurriculumEnComponent,
+<<<<<<< HEAD
     ClassesComponent,
     SchedulesComponent,
     ScheduleIT1AComponent,
@@ -354,6 +243,9 @@ const appRoutes: Routes = [
     ScheduleIT1IComponent,
     ScheduleIT1JComponent,
     TeachersComponent
+=======
+    ClassesComponent
+>>>>>>> parent of 1573936... Nederlandse menu werkt volledig
   ],
   imports: [
     RouterModule.forRoot(appRoutes, {enableTracing: true}),
