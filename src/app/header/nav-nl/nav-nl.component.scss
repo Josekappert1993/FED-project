@@ -1,5 +1,5 @@
 nav{
-    @media (min-width: 500px){
+    @media (min-width: 800px){
         display: none;
         
     }
@@ -36,7 +36,7 @@ a, button{
     text-decoration: none;
     font-family: calibri,sans-serif;
     font-weight: 700;
-    @media (min-width:500px) {
+    @media (min-width:800px) {
         font-size:15px;
     }
     font-size: 25px;
@@ -52,7 +52,7 @@ a, button{
 }
 
 .desktop-menu{
-    @media (max-width: 500px){
+    @media (max-width: 800px){
     display: none;
     }
     font-size: 15px;
@@ -62,7 +62,7 @@ a, button{
         background: none;
         font-size: 20px;
         img{
-            width: 20px;
+            height: 10px;
         }
         a{
             padding-left: 10px;
