@@ -63,6 +63,15 @@ import { GroupIT1JComponent } from './content/en/groups/group-it1-j/group-it1-j.
 import { CurriculumEnComponent } from './content/en/curriculum-en/curriculum-en.component';
 
 import { ClassesComponent } from './content/en/classes/classes.component';
+import { Netwerken1Component } from './content/nl/vakken/netwerken1/netwerken1.component';
+import { PHP2Component } from './content/nl/vakken/php2/php2.component';
+import { ProjectBattleBotComponent } from './content/nl/vakken/project-battle-bot/project-battle-bot.component';
+import { ProjectDigitaalPortfolioComponent } from './content/nl/vakken/project-digitaal-portfolio/project-digitaal-portfolio.component';
+import { ProjectInnovateComponent } from './content/nl/vakken/project-innovate/project-innovate.component';
+import { ProjectProfessioneleWebsiteComponent } from './content/nl/vakken/project-professionele-website/project-professionele-website.component';
+import { SchriftelijkeCommunicatieComponent } from './content/nl/vakken/schriftelijke-communicatie/schriftelijke-communicatie.component';
+import { SLB1AComponent } from './content/nl/vakken/slb1-a/slb1-a.component';
+import { WIS1Component } from './content/nl/vakken/wis1/wis1.component';
 const appRoutes: Routes = [
   {
     path: '', component:HomeNlComponent
@@ -136,6 +145,63 @@ const appRoutes: Routes = [
   {
     path: 'rooster-INF1J', component:RoosterINF1JComponent
   },
+  {
+    path: 'vakken', component:VakkenComponent
+  },
+  {
+    path: 'CSharp1', component: CSharp1Component
+  },
+  {
+    path: 'Database1', component: Database1Component
+  },
+  {
+    path: 'FED1', component: FED1Component
+  },
+  {
+    path: 'HTML', component: HTMLComponent
+  },
+  {
+    path: 'Informatiemanagement', component: InformatiemanagementComponent
+  },
+  {
+    path: 'Java1', component: Java1Component
+  },
+  {
+    path: 'Mondelinge-Communicatie', component: MondelingeCommunicatieComponent
+  },
+  {
+    path: 'Multimediaproductie', component: MultimediaproductieComponent
+  },
+  {
+    path: 'Netwerken1', component: Netwerken1Component
+  },
+  {
+    path: 'PHP1', component:PHP1Component
+  },
+  {
+    path: 'PHP2', component:PHP2Component
+  },
+  {
+    path: 'Project-Battle-bot', component:ProjectBattleBotComponent
+  },
+  {
+    path: 'Project-digitaal-portfolio', component:ProjectDigitaalPortfolioComponent
+  },
+  {
+    path: 'Project-Innovate', component:ProjectInnovateComponent
+  },
+  {
+    path: 'Project-professionele-website', component: ProjectProfessioneleWebsiteComponent
+  },
+  {
+    path: 'Schriftelijke-Communicatie', component: SchriftelijkeCommunicatieComponent
+  },
+  {
+    path: 'SLB1A', component: SLB1AComponent
+  },
+  {
+    path: 'WIS1', component: WIS1Component
+  },
   {    
     path: 'docenten', component:DocentenComponent
   },
@@ -188,7 +254,6 @@ const appRoutes: Routes = [
     RoosterINF1IComponent,
     RoosterINF1JComponent,
     VakkenComponent,
-    PHP1Component,
     CSharp1Component,
     Database1Component,
     FED1Component,
@@ -196,7 +261,18 @@ const appRoutes: Routes = [
     InformatiemanagementComponent,
     Java1Component,
     MondelingeCommunicatieComponent,
+    MondelingeCommunicatieComponent,
     MultimediaproductieComponent,
+    Netwerken1Component,
+    PHP1Component,
+    PHP2Component,
+    ProjectBattleBotComponent,
+    ProjectDigitaalPortfolioComponent,
+    ProjectInnovateComponent,
+    ProjectProfessioneleWebsiteComponent,
+    SchriftelijkeCommunicatieComponent,
+    SLB1AComponent,
+    WIS1Component,
     DocentenComponent,
     MededelingenComponent,
     GroupsComponent,
