@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component } from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { MatMenuModule, MatExpansionModule } from '@angular/material';
 
@@ -290,7 +289,6 @@ const appRoutes: Routes = [
     CurriculumEnComponent
   ],
   imports: [
-    NgbModule,
     RouterModule.forRoot(appRoutes, {enableTracing: true}),
     MatExpansionModule,
     MatMenuModule,

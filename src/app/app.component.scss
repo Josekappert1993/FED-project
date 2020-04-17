@@ -1,6 +1,3 @@
-/* or your 'styles.scss' with */
-@import "~bootstrap/scss/bootstrap";
-
 *{
     padding: 0;
     margin: 0;
@@ -8,9 +5,4 @@
     font-weight: 700;
     font-style: normal;
 }
-.content{
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    background-color: blue;
-    background-size: cover;
-}
+
