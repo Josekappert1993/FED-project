@@ -1,5 +1,7 @@
 nav{
-        background-color: white;
+    
+    color: #005AAA;
+        background-color:white;
         .navigation{
             display: block;
         }
@@ -53,4 +55,9 @@ a, button{
 
 .transparent{
     opacity: 0.5;
+}
+
+.flag{
+    height: 20px;
+    padding: 5px;
 }

@@ -1,6 +1,6 @@
 
     <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper">
+    <nav class="bg-light border-right" id="sidebar-wrapper">
         <a href="/"><img class="logo sidebar-heading" src="assets/images/Logo.png" alt="logo"></a> <button class="right open" (click)="toggle('open')"><img src="assets/images/arrow.png" alt="arrow"></button>
         
         <div class="list-group list-group-flush" *ngIf="open">
@@ -13,15 +13,8 @@
                     <a class="list-group-item list-group-item-action bg-light" href="klas-INF1E">INF1E</a>
                 </div>
             </div>
-            <div class="list-group-item list-group-item-action bg-light"><a target="_top"  (click)="toggle('schedule')">Roosters <img src="assets/images/arrow.png" alt="arrow"></a>
-                <div *ngIf="schedule">
-                    <a class="list-group-item list-group-item-action bg-light" href="rooster-INF1A">INF1A</a>
-                    <a class="list-group-item list-group-item-action bg-light" href="rooster-INF1B">INF1B</a>
-                    <a class="list-group-item list-group-item-action bg-light" href="rooster-INF1C">INF1C</a>
-                    <a class="list-group-item list-group-item-action bg-light" href="rooster-INF1D">INF1D</a>
-                    <a class="list-group-item list-group-item-action bg-light" href="rooster-INF1E">INF1E</a>
-                    <a class="list-group-item list-group-item-action bg-light" href="rooster-INF1F1">INF1F1</a>
-                </div>
+            <div class="list-group-item list-group-item-action bg-light">
+                <a class="list-group-item list-group-item-action bg-light" href="roosters">Roosters</a>
             </div>
             <div class="list-group-item list-group-item-action bg-light"><a target="_top" (click)="toggle('vak')" class="nav-link active" >Vakken  <img src="assets/images/arrow.png" alt="arrow"></a>
                 <div *ngIf="vak">
@@ -48,8 +41,7 @@
             <div class="list-group-item list-group-item-action bg-light"><a class="list-group-item list-group-item-action bg-light" href="docenten">Docenten</a></div>
             <div class="list-group-item list-group-item-action bg-light"><a class="list-group-item list-group-item-action bg-light" href="Curriculum-nl">Curriculum</a></div>
             <div class="list-group-item list-group-item-action bg-light"><a class="list-group-item list-group-item-action bg-light" href="mededelingen">Mededelingen</a></div>
-            <!-- <li><a href="home-en"><img src="assets/images/united-kingdom-flag-icon-32.png" class="transparent"></a></li>
-            <li><a href="/"><img src="assets/images/netherlands-flag-small.png"></a></li> -->
+            <div class="list-group-item list-group-item-action bg-light"><a href="home-en"><img src="assets/images/united-kingdom-flag-icon-32.png" class="transparent flag"></a><a href="/"><img class="flag" src="assets/images/netherlands-flag-small.png"></a></div>
             </div>
-    </div>
+        </nav>
     <!-- /#sidebar-wrapper -->
