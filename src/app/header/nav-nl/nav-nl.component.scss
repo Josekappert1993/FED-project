@@ -1,5 +1,11 @@
 nav{
     
+.mobile{
+    display: none;
+    @media (min-width: 500px) {
+        display: inline;
+    }
+}
     color: #005AAA;
         background-color:white;
         .navigation{
@@ -44,9 +50,7 @@ a, button{
 }
 
 .open{
-    @media (min-width:500px) {
-        display: none;
-    }
+    border:none;
 }
 
 .logo{

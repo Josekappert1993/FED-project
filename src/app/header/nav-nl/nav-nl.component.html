@@ -1,22 +1,22 @@
 <!-- Sidebar -->
 <nav id="sidebar-wrapper">
-    <a href="/"><img class="logo sidebar-heading" src="assets/images/Logo.png" alt="logo"></a> <button class="right open" (click)="toggle('open')"><img src="assets/images/arrow.png" alt="arrow"></button>
+    <a href="/"><img class="logo sidebar-heading" src="assets/images/Logo.png" alt="logo"></a> 
     
     <div class="list-group list-group-flush" *ngIf="open">
-        <div class="list-group-item list-group-item-action bg-light"><a target="_top" (click)="toggle('group')">Klassen  <img src="assets/images/arrow.png" alt="arrow" ></a>
-            <div *ngIf="group">
+        <div class="list-group-item list-group-item-action bg-light"><a target="_top" (click)="toggle('group')">Klassen  <img src="assets/images/arrow.png" alt="arrow" ></a></div>
+            <div class="list-group-item list-group-item-action bg-light" *ngIf="group">
                 <a class="list-group-item list-group-item-action bg-light" href="klas-INF1A">INF1A</a>
                 <a class="list-group-item list-group-item-action bg-light" href="klas-INF1B">INF1B</a>
                 <a class="list-group-item list-group-item-action bg-light" href="klas-INF1C">INF1C</a>
                 <a class="list-group-item list-group-item-action bg-light" href="klas-INF1D">INF1D</a>
                 <a class="list-group-item list-group-item-action bg-light" href="klas-INF1E">INF1E</a>
             </div>
-        </div>
+
         <div class="list-group-item list-group-item-action bg-light">
-            <a class="list-group-item list-group-item-action bg-light" href="roosters">Roosters</a>
+            <a href="roosters">Roosters</a>
         </div>
-        <div class="list-group-item list-group-item-action bg-light"><a target="_top" (click)="toggle('vak')" class="nav-link active" >Vakken  <img src="assets/images/arrow.png" alt="arrow"></a>
-            <div *ngIf="vak">
+        <div class="list-group-item list-group-item-action bg-light"><a target="_top" (click)="toggle('vak')" class="nav-link active" >Vakken  <img src="assets/images/arrow.png" alt="arrow"></a> </div>
+            <div  class="list-group-item list-group-item-action bg-light" *ngIf="vak">
                 <a class="list-group-item list-group-item-action bg-light" href="PHP1">PHP1</a>
                 <a class="list-group-item list-group-item-action bg-light" href="HTML">(X)HTML en CSS</a>
                 <a class="list-group-item list-group-item-action bg-light" href="FED1">FED Essentials</a>
@@ -36,11 +36,11 @@
                 <a class="list-group-item list-group-item-action bg-light" href="Project-Innovate">Project Innovate</a>
                 <a class="list-group-item list-group-item-action bg-light" href="Multimediaproductie">Multimediaproductie</a>
             </div>
+        <div class="list-group-item list-group-item-action bg-light"><a href="docenten">Docenten</a></div>
+        <div class="list-group-item list-group-item-action bg-light"><a  href="Curriculum-nl">Curriculum</a></div>
+        <div class="list-group-item list-group-item-action bg-light"><a href="mededelingen">Mededelingen</a></div>
+        
         </div>
-        <div class="list-group-item list-group-item-action bg-light"><a class="list-group-item list-group-item-action bg-light" href="docenten">Docenten</a></div>
-        <div class="list-group-item list-group-item-action bg-light"><a class="list-group-item list-group-item-action bg-light" href="Curriculum-nl">Curriculum</a></div>
-        <div class="list-group-item list-group-item-action bg-light"><a class="list-group-item list-group-item-action bg-light" href="mededelingen">Mededelingen</a></div>
-        <div class="list-group-item list-group-item-action bg-light"><a href="home-en"><img src="assets/images/united-kingdom-flag-icon-32.png" class="transparent flag"></a><a href="/"><img class="flag" src="assets/images/netherlands-flag-small.png"></a></div>
-        </div>
+        <div class="list-group-item list-group-item-action bg-light"><a href="home-en"><img src="assets/images/united-kingdom-flag-icon-32.png" class="transparent flag"></a><a href="/"><img class="flag" src="assets/images/netherlands-flag-small.png"></a><button class="right open mobile" (click)="toggle('open')"><img src="assets/images/arrow.png" alt="arrow"></button></div>
     </nav>
 <!-- /#sidebar-wrapper -->
