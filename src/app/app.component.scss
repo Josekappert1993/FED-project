@@ -1,12 +1,25 @@
-@import '~bootstrap/dist/css/bootstrap.min.css';
+html{
+    background-color: #005AAA;
+}
 *{
     padding: 0;
     margin: 0;
     font-family: calibri,sans-serif;
     font-weight: 700;
     font-style: normal;
+    background-color: #005AAA;
+    height: 100%;
+    background-size: cover;
+    color: white;
 }
 
 body{
     height: 100%;
+    background-color: #005AAA;
+}
+
+.container{
+    max-width: 100%;
+    padding: 0;
+    background-color: #005AAA;
 }

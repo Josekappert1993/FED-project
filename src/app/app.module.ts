@@ -61,6 +61,7 @@ import { ProjectProfessioneleWebsiteComponent } from './content/nl/vakken/projec
 import { SchriftelijkeCommunicatieComponent } from './content/nl/vakken/schriftelijke-communicatie/schriftelijke-communicatie.component';
 import { SLB1AComponent } from './content/nl/vakken/slb1-a/slb1-a.component';
 import { WIS1Component } from './content/nl/vakken/wis1/wis1.component';
+import { CompetentiesComponent } from './content/nl/competenties/competenties.component';
 const appRoutes: Routes = [
   {
     path: '', component:HomeNlComponent
@@ -170,6 +171,9 @@ const appRoutes: Routes = [
   {    
     path: 'Curriculum-nl', component:CurriculumComponent
   },
+  {
+    path: 'Competenties', component:CompetentiesComponent
+  },
   // engelse navigatie
   {
     path: 'home-en', component:HomeEnComponent
@@ -236,7 +240,8 @@ const appRoutes: Routes = [
     GroupIT1HComponent,
     GroupIT1IComponent,
     GroupIT1JComponent,
-    CurriculumEnComponent
+    CurriculumEnComponent,
+    CompetentiesComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes, {enableTracing: true}),
