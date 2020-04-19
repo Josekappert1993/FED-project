@@ -1,5 +1,4 @@
-nav{
-    
+nav{ 
 .mobile{
     display: none;
     @media (min-width: 500px) {
@@ -51,6 +50,7 @@ a, button{
 
 .open{
     border:none;
+    background-color: none;
 }
 
 .logo{
@@ -64,4 +64,7 @@ a, button{
 .flag{
     height: 20px;
     padding: 5px;
+}
+.container{
+    background-color: #005AAA;
 }

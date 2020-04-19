@@ -18,7 +18,8 @@ body{
     background-color: #005AAA;
 }
 
-.container{
+.container, .row{
+    height: 100%;
     max-width: 100%;
     padding: 0;
     background-color: #005AAA;
