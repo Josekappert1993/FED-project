@@ -5,7 +5,7 @@ nav{
         display: inline;
     }
 }
-    color: #005AAA;
+color: #495057;
         background-color:white;
         .navigation{
             display: block;
@@ -34,13 +34,18 @@ nav{
 a, button{
     padding: 0;
     margin: 10px;
-    color: #005AAA;
+    color: #495057;
+    &:hover{
+        color: #495057;
+        opacity: 0.5;
+    }
     font-weight: bold;
     text-decoration: none;
     font-family: calibri,sans-serif;
     font-weight: 700;
     @media (min-width:500px) {
         font-size:15px;
+        text-decoration: none;
     }
     font-size: 25px;
     font-style: normal;
