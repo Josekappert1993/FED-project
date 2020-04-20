@@ -1,46 +1,49 @@
 <!-- Sidebar -->
 <nav id="sidebar-wrapper">
-    <a href="/"><img class="logo sidebar-heading" src="assets/images/Logo.png" alt="logo"></a> 
+
+    <a href="/"><div id="top-nav"><img class="logo sidebar-heading" src="assets/images/Logo.png" alt="logo"></div></a>
     
-    <div class="list-group list-group-flush" *ngIf="open">
-        <div class="list-group-item list-group-item-action bg-light"><a target="_top" (click)="toggle('group')">Klassen  <img src="assets/images/arrow.png" alt="arrow" ></a></div>
-            <div class="list-group-item list-group-item-action bg-light" *ngIf="group">
-                <a class="list-group-item list-group-item-action bg-light" href="klas-INF1A">INF1A</a>
-                <a class="list-group-item list-group-item-action bg-light" href="klas-INF1B">INF1B</a>
-                <a class="list-group-item list-group-item-action bg-light" href="klas-INF1C">INF1C</a>
-                <a class="list-group-item list-group-item-action bg-light" href="klas-INF1D">INF1D</a>
-                <a class="list-group-item list-group-item-action bg-light" href="klas-INF1E">INF1E</a>
+    <div id="center-nav" class="list-group list-group-flush" *ngIf="open">
+        <a target="_top" (click)="toggle('group')"><div class="list-group-item list-group-item-action">Klassen <img class="arrow" src="assets/images/arrow.png" alt="arrow"></div></a>
+            <div class="list-group-item list-group-item-action" *ngIf="group">
+                <a class="list-group-item list-group-item-action" href="klas-INF1A">INF1A</a>
+                <a class="list-group-item list-group-item-action" href="klas-INF1B">INF1B</a>
+                <a class="list-group-item list-group-item-action" href="klas-INF1C">INF1C</a>
+                <a class="list-group-item list-group-item-action" href="klas-INF1D">INF1D</a>
+                <a class="list-group-item list-group-item-action" href="klas-INF1E">INF1E</a>
             </div>
 
-        <div class="list-group-item list-group-item-action bg-light">
-            <a href="roosters">Roosters</a>
-        </div>
-        <div class="list-group-item list-group-item-action bg-light"><a target="_top" (click)="toggle('vak')" class="nav-link active" >Vakken  <img src="assets/images/arrow.png" alt="arrow"></a> </div>
-            <div  class="list-group-item list-group-item-action bg-light" *ngIf="vak">
-                <a class="list-group-item list-group-item-action bg-light" href="PHP1">PHP1</a>
-                <a class="list-group-item list-group-item-action bg-light" href="HTML">(X)HTML en CSS</a>
-                <a class="list-group-item list-group-item-action bg-light" href="FED1">FED Essentials</a>
-                <a class="list-group-item list-group-item-action bg-light" href="Project-professionele-website">Project Professionele website</a>
-                <a class="list-group-item list-group-item-action bg-light" href="Informatiemanagement">Informatiemanagement</a>
-                <a class="list-group-item list-group-item-action bg-light" href="SLB1A">SLB1A</a>
-                <a class="list-group-item list-group-item-action bg-light" href="Database1">Inleiding Databases</a>
-                <a class="list-group-item list-group-item-action bg-light" href="PHP2">Unleash your potential in PHP</a>
-                <a class="list-group-item list-group-item-action bg-light" href="Project-digitaal-portfolio">Digitale Portfolio</a>
-                <a class="list-group-item list-group-item-action bg-light" href="Mondelinge-Communicatie">Mondelinge Communicatie</a>
-                <a class="list-group-item list-group-item-action bg-light" href="WIS1">Basiswiskunde</a>
-                <a class="list-group-item list-group-item-action bg-light" href="Schriftelijke-Communicatie">Schriftelijke Communicatie 1</a>
-                <a class="list-group-item list-group-item-action bg-light" href="Java1">Inleiding programmeren in Java</a>
-                <a class="list-group-item list-group-item-action bg-light" href="Netwerken1">Inleiding Computernetwerken</a>
-                <a class="list-group-item list-group-item-action bg-light" href="Project-Battle-bot">Project Battle bot</a>
-                <a class="list-group-item list-group-item-action bg-light" href="CSharp1">Module C#</a>
-                <a class="list-group-item list-group-item-action bg-light" href="Project-Innovate">Project Innovate</a>
-                <a class="list-group-item list-group-item-action bg-light" href="Multimediaproductie">Multimediaproductie</a>
+        <a href="roosters"><div class="list-group-item list-group-item-action">Roosters</div></a>
+
+        <a target="_top" (click)="toggle('vak')" class="nav-link active"><div class="list-group-item list-group-item-action">Vakken<img class="arrow" src="assets/images/arrow.png" alt="arrow"></div></a>
+            <div  class="list-group-item list-group-item-action" *ngIf="vak">
+                <a class="list-group-item list-group-item-action" href="PHP1">PHP1</a>
+                <a class="list-group-item list-group-item-action" href="HTML">(X)HTML en CSS</a>
+                <a class="list-group-item list-group-item-action" href="FED1">FED Essentials</a>
+                <a class="list-group-item list-group-item-action" href="Project-professionele-website">Project Professionele website</a>
+                <a class="list-group-item list-group-item-action" href="Informatiemanagement">Informatiemanagement</a>
+                <a class="list-group-item list-group-item-action" href="SLB1A">SLB1A</a>
+                <a class="list-group-item list-group-item-action" href="Database1">Inleiding Databases</a>
+                <a class="list-group-item list-group-item-action" href="PHP2">Unleash your potential in PHP</a>
+                <a class="list-group-item list-group-item-action" href="Project-digitaal-portfolio">Digitale Portfolio</a>
+                <a class="list-group-item list-group-item-action" href="Mondelinge-Communicatie">Mondelinge Communicatie</a>
+                <a class="list-group-item list-group-item-action" href="WIS1">Basiswiskunde</a>
+                <a class="list-group-item list-group-item-action" href="Schriftelijke-Communicatie">Schriftelijke Communicatie 1</a>
+                <a class="list-group-item list-group-item-action" href="Java1">Inleiding programmeren in Java</a>
+                <a class="list-group-item list-group-item-action" href="Netwerken1">Inleiding Computernetwerken</a>
+                <a class="list-group-item list-group-item-action" href="Project-Battle-bot">Project Battle bot</a>
+                <a class="list-group-item list-group-item-action" href="CSharp1">Module C#</a>
+                <a class="list-group-item list-group-item-action" href="Project-Innovate">Project Innovate</a>
+                <a class="list-group-item list-group-item-action" href="Multimediaproductie">Multimediaproductie</a>
             </div>
-        <div class="list-group-item list-group-item-action bg-light"><a href="docenten">Docenten</a></div>
-        <div class="list-group-item list-group-item-action bg-light"><a  href="Curriculum-nl">Curriculum</a></div>
-        <div class="list-group-item list-group-item-action bg-light"><a href="mededelingen">Mededelingen</a></div>
-        
-        </div>
-        <div class="list-group-item list-group-item-action bg-light"><a href="home-en"><img src="assets/images/united-kingdom-flag-icon-32.png" class="transparent flag"></a><a href="/"><img class="flag" src="assets/images/netherlands-flag-small.png"></a><button class="right open mobile" (click)="toggle('open')"><img src="assets/images/arrow.png" alt="arrow"></button></div>
-    </nav>
+        <a href="docenten"><div class="list-group-item list-group-item-action">Docenten</div></a>
+        <a href="Curriculum-nl"><div class="list-group-item list-group-item-action">Curriculum</div></a>
+        <a href="mededelingen"><div class="list-group-item list-group-item-action">Mededelingen</div></a>
+    </div>
+
+    <div id="bottom-nav">
+        <a href="home-en"><img src="assets/images/united-kingdom-flag-icon-32.png" class="transparent flag"></a>
+        <a href="/"><img class="flag" src="assets/images/netherlands-flag-small.png"></a>
+    </div>
+</nav>
 <!-- /#sidebar-wrapper -->
