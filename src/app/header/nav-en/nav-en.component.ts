@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavEnComponent implements OnInit {
 
-  public open:boolean = false;
+  public open:boolean = true;
   public group:boolean = false;
   public schedule:boolean = false;
   public vak:boolean = false;
