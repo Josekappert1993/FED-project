@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RoosterINF1JComponent } from './rooster-inf1-j.component';
+import { CompetentiesComponent } from './competenties.component';
 
-describe('RoosterINF1JComponent', () => {
-  let component: RoosterINF1JComponent;
-  let fixture: ComponentFixture<RoosterINF1JComponent>;
+describe('CompetentiesComponent', () => {
+  let component: CompetentiesComponent;
+  let fixture: ComponentFixture<CompetentiesComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RoosterINF1JComponent ]
+      declarations: [ CompetentiesComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RoosterINF1JComponent);
+    fixture = TestBed.createComponent(CompetentiesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

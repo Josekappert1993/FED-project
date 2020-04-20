@@ -24,16 +24,6 @@ import { KlasINF1HComponent } from './content/nl/klassen/klas-inf1-h/klas-inf1-h
 import { KlasINF1IComponent } from './content/nl/klassen/klas-inf1-i/klas-inf1-i.component';
 import { KlasINF1JComponent } from './content/nl/klassen/klas-inf1-j/klas-inf1-j.component';
 import { RoostersComponent } from './content/nl/roosters/roosters.component';
-import { RoosterINF1AComponent } from './content/nl/roosters/rooster-inf1-a/rooster-inf1-a.component';
-import { RoosterINF1BComponent } from './content/nl/roosters/rooster-inf1-b/rooster-inf1-b.component';
-import { RoosterINF1CComponent } from './content/nl/roosters/rooster-inf1-c/rooster-inf1-c.component';
-import { RoosterINF1DComponent } from './content/nl/roosters/rooster-inf1-d/rooster-inf1-d.component';
-import { RoosterINF1EComponent } from './content/nl/roosters/rooster-inf1-e/rooster-inf1-e.component';
-import { RoosterINF1F1Component } from './content/nl/roosters/rooster-inf1-f1/rooster-inf1-f1.component';
-import { RoosterINF1GComponent } from './content/nl/roosters/rooster-inf1-g/rooster-inf1-g.component';
-import { RoosterINF1HComponent } from './content/nl/roosters/rooster-inf1-h/rooster-inf1-h.component';
-import { RoosterINF1IComponent } from './content/nl/roosters/rooster-inf1-i/rooster-inf1-i.component';
-import { RoosterINF1JComponent } from './content/nl/roosters/rooster-inf1-j/rooster-inf1-j.component';
 import { VakkenComponent } from './content/nl/vakken/vakken.component';
 import { PHP1Component } from './content/nl/vakken/php1/php1.component';
 import { CSharp1Component } from './content/nl/vakken/csharp1/csharp1.component';
@@ -71,6 +61,7 @@ import { ProjectProfessioneleWebsiteComponent } from './content/nl/vakken/projec
 import { SchriftelijkeCommunicatieComponent } from './content/nl/vakken/schriftelijke-communicatie/schriftelijke-communicatie.component';
 import { SLB1AComponent } from './content/nl/vakken/slb1-a/slb1-a.component';
 import { WIS1Component } from './content/nl/vakken/wis1/wis1.component';
+import { CompetentiesComponent } from './content/nl/competenties/competenties.component';
 const appRoutes: Routes = [
   {
     path: '', component:HomeNlComponent
@@ -113,36 +104,6 @@ const appRoutes: Routes = [
   },
   {
     path: 'roosters', component:RoostersComponent
-  },
-  {
-    path: 'rooster-INF1A', component:RoosterINF1AComponent
-  },
-  {
-    path: 'rooster-INF1B', component:RoosterINF1BComponent
-  },
-  {
-    path: 'rooster-INF1C', component:RoosterINF1CComponent
-  },
-  {
-    path: 'rooster-INF1D', component:RoosterINF1DComponent
-  },
-  {
-    path: 'rooster-INF1E', component:RoosterINF1EComponent
-  },
-  {
-    path: 'rooster-INF1F1', component:KlasINF1FComponent
-  },
-  {
-    path: 'rooster-INF1G', component:RoosterINF1GComponent
-  },
-  {
-    path: 'rooster-INF1H', component:RoosterINF1HComponent
-  },
-  {
-    path: 'rooster-INF1I', component:RoosterINF1IComponent
-  },
-  {
-    path: 'rooster-INF1J', component:RoosterINF1JComponent
   },
   {
     path: 'vakken', component:VakkenComponent
@@ -210,6 +171,9 @@ const appRoutes: Routes = [
   {    
     path: 'Curriculum-nl', component:CurriculumComponent
   },
+  {
+    path: 'Competenties', component:CompetentiesComponent
+  },
   // engelse navigatie
   {
     path: 'home-en', component:HomeEnComponent
@@ -242,16 +206,6 @@ const appRoutes: Routes = [
     KlasINF1IComponent,
     KlasINF1JComponent,
     RoostersComponent,
-    RoosterINF1AComponent,
-    RoosterINF1BComponent,
-    RoosterINF1CComponent,
-    RoosterINF1DComponent,
-    RoosterINF1EComponent,
-    RoosterINF1F1Component,
-    RoosterINF1GComponent,
-    RoosterINF1HComponent,
-    RoosterINF1IComponent,
-    RoosterINF1JComponent,
     VakkenComponent,
     CSharp1Component,
     Database1Component,
@@ -286,7 +240,8 @@ const appRoutes: Routes = [
     GroupIT1HComponent,
     GroupIT1IComponent,
     GroupIT1JComponent,
-    CurriculumEnComponent
+    CurriculumEnComponent,
+    CompetentiesComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes, {enableTracing: true}),
