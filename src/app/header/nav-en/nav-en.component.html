@@ -1,48 +1,102 @@
-<!-- Sidebar -->
-<nav id="sidebar-wrapper">
-    <a href="/"><img class="logo sidebar-heading" src="assets/images/Logo.png" alt="logo"></a> 
-    
-    <div class="list-group list-group-flush" *ngIf="open">
-        
-            <div class="list-group-item list-group-item-action bg-light"><a target="_top" (click)="toggle('group')"> Groups  <img src="assets/images/arrow.png" alt="arrow" ></a></div>
-                <div class="list-group-item list-group-item-action bg-light" *ngIf="group">
-                    <a class="list-group-item list-group-item-action bg-light" href="group-IT1A">IT1A</a>
-                    <a class="list-group-item list-group-item-action bg-light" href="group-IT1B">IT1B</a>
-                    <a class="list-group-item list-group-item-action bg-light" href="group-IT1C">IT1C</a>
-                    <a class="list-group-item list-group-item-action bg-light" href="group-IT1D">IT1D</a>
-                    <a class="list-group-item list-group-item-action bg-light" href="group-IT1E">IT1E</a>
-                    <a class="list-group-item list-group-item-action bg-light" href="group-IT1F1">IT1F1</a>
-                    <a class="list-group-item list-group-item-action bg-light" href="group-IT1G">IT1G</a>
-                    <a class="list-group-item list-group-item-action bg-light" href="group-IT1H">IT1H</a>
-                    <a class="list-group-item list-group-item-action bg-light" href="group-IT1I">IT1I</a>
-                    <a class="list-group-item list-group-item-action bg-light" href="group-IT1J">IT1J</a>
-                </div>
-    
+<!-- Desktop menu -->
+<div class="desktop-menu">
+    <a href="/"><img class="logo" src="assets/images/Logo_Information-Technology.png" alt="logo"></a>
+    <button mat-button [matMenuTriggerFor]="groups">Groups  <img src="assets/images/arrow.png" alt="arrow" ></button>
+    <mat-menu #groups="matMenu">
+            <button mat-menu-item><a href="group-IT1A">IT1A</a></button>
+            <button mat-menu-item><a href="group-IT1B">IT1B</a></button>
+            <button mat-menu-item><a href="group-IT1C">IT1C</a></button>
+            <button mat-menu-item><a href="group-IT1D">IT1D</a></button>
+            <button mat-menu-item><a href="group-IT1E">IT1E</a></button>
+            <button mat-menu-item><a href="group-IT1F">IT1F</a></button>
+    </mat-menu>
+    <button mat-button [matMenuTriggerFor]="schedule">Schedules  <img src="assets/images/arrow.png" alt="arrow" ></button>
+    <mat-menu #schedule="matMenu">
+            <button mat-menu-item><a href="schedule-IT1A">IT1A</a></button>
+            <button mat-menu-item><a href="schedule-IT1B">IT1B</a></button>
+            <button mat-menu-item><a href="schedule-IT1C">IT1C</a></button>
+            <button mat-menu-item><a href="schedule-IT1D">IT1D</a></button>
+            <button mat-menu-item><a href="schedule-IT1E">IT1E</a></button>
+            <button mat-menu-item><a href="schedule-IT1F">IT1F</a></button>
+    </mat-menu>
 
-        <div class="list-group-item list-group-item-action bg-light">
-            <a target="_blank" href="https://sa-nhlstenden.xedule.nl/">Schedules</a>
-        </div>
-        <div class="list-group-item list-group-item-action bg-light"><a target="_top" (click)="toggle('vak')" class="nav-link active" >Classes  <img src="assets/images/arrow.png" alt="arrow"></a> </div>
-            <div  class="list-group-item list-group-item-action bg-light" *ngIf="vak">
-                <a class="list-group-item list-group-item-action bg-light" target="_blank" href="https://blackboard.nhlstenden.com/bbcswebdav/pid-2832717-dt-content-rid-7875935_6/courses/hto-200908-02/Moduleboek_OIPHP1_191015.pdf">PHP1</a>
-                <a class="list-group-item list-group-item-action bg-light" target="_blank" href="https://blackboard.nhlstenden.com/bbcswebdav/pid-2832959-dt-content-rid-7462837_6/courses/hto-200908-03/Moduleboek_OIXH_190826.pdf">(X)HTML en CSS</a>
-                <a class="list-group-item list-group-item-action bg-light" target="_blank" href="https://blackboard.nhlstenden.com/bbcswebdav/pid-4293273-dt-content-rid-7500758_6/courses/hto-200908-04/Moduleboek_OIFED1_190820.pdf">FED Essentials</a>
-                <a class="list-group-item list-group-item-action bg-light" target="_blank" href="https://blackboard.nhlstenden.com/bbcswebdav/pid-694856-dt-content-rid-2992728_6/courses/hto-200908-05/160525_Moduleboek%20PROFWEBS.pdf">Project Professionele website</a>
-                <a class="list-group-item list-group-item-action bg-light" target="_blank" href="https://blackboard.nhlstenden.com/bbcswebdav/pid-851661-dt-content-rid-7710107_6/courses/hto-200911-02/Moduleboek_OIIM_190924%203.7.pdf">Informatiemanagement</a>
-                <a class="list-group-item list-group-item-action bg-light" target="_blank" href="https://blackboard.nhlstenden.com/bbcswebdav/pid-4747084-dt-content-rid-10419226_6/courses/hto-200908-06/MODUULBOEK_SLB1A_versie%200.2_Informatica_2019_september%282%29.pdf">SLB1A</a>
-                <a class="list-group-item list-group-item-action bg-light" target="_blank" href="https://blackboard.nhlstenden.com/bbcswebdav/pid-4429061-dt-content-rid-8470805_6/courses/hto-200911-01/20191111_moduleboek_OIDB1_Inleiding_Databases.pdf">Inleiding Databases</a>
-                <a class="list-group-item list-group-item-action bg-light" target="_blank" href="https://blackboard.nhlstenden.com/bbcswebdav/pid-599699-dt-content-rid-8273393_6/courses/hto-200911-04/Moduleboek_OIPHP2_191105.pdf">Unleash your potential in PHP</a>
-                <a class="list-group-item list-group-item-action bg-light" target="_blank" href="https://blackboard.nhlstenden.com/bbcswebdav/pid-694911-dt-content-rid-8448893_6/courses/hto-200911-05/20191111_Module_WebApplicatie_v5.pdf">Digitale Portfolio</a>
-                <a class="list-group-item list-group-item-action bg-light" target="_blank" href="https://blackboard.nhlstenden.com/bbcswebdav/pid-4680583-dt-content-rid-8390549_6/courses/hto-201704-01/Moduleboek%20MC-1%202019-2020.pdf">Mondelinge Communicatie</a>
-                <a class="list-group-item list-group-item-action bg-light" target="_blank" href="https://blackboard.nhlstenden.com/bbcswebdav/pid-3497326-dt-content-rid-6217927_6/courses/HTO-201609-01/Moduleboek_OIWI1_190129-versie-2.0%281%29.pdf">Basiswiskunde</a>
-                <a class="list-group-item list-group-item-action bg-light" target="_blank" href="https://blackboard.nhlstenden.com/bbcswebdav/pid-4754227-dt-content-rid-10540591_6/courses/HTO-201701-02/GSC01%202019-2020.pdf">Schriftelijke Communicatie 1</a>
-                <a class="list-group-item list-group-item-action bg-light" target="_blank" href="https://blackboard.nhlstenden.com/bbcswebdav/pid-600351-dt-content-rid-4308581_6/courses/hto-200911-08/Moduleboek_OIJV1_180524.pdf">Inleiding programmeren in Java</a>
-                
-            </div>
-        <div class="list-group-item list-group-item-action bg-light"><a href="teachers">Teachers</a></div>
-        <div class="list-group-item list-group-item-action bg-light"><a href="announcements">Announcements</a></div>
-        
-        </div>
-        <div class="list-group-item list-group-item-action bg-light"><a href="home-en"><img src="assets/images/united-kingdom-flag-icon-32.png" class=" flag"></a><a href="/"><img class="transparent flag" src="assets/images/netherlands-flag-small.png"></a><button class="right open mobile" (click)="toggle('open')"><img src="assets/images/arrow.png" alt="arrow"></button></div>
-    </nav>
-<!-- /#sidebar-wrapper -->
+    <button mat-button [matMenuTriggerFor]="vak">Classes  <img src="assets/images/arrow.png" alt="arrow" ></button>
+    <mat-menu #vak="matMenu">
+        <button mat-menu-item><a href="PHP1-en">PHP1</a></button>
+        <button mat-menu-item><a href="HTML-en">HTML</a></button>
+        <button mat-menu-item><a href="FED1-en">FED1</a></button>
+        <button mat-menu-item><a href="Project-professionele-website-en">Professionele website</a></button>
+        <button mat-menu-item><a href="Informatiemanagement-en">Informatiemanagement</a></button>
+        <button mat-menu-item><a href="SLB1A-en">SLB1A</a></button>
+        <button mat-menu-item><a href="Database1-en">Databases 1</a></button>
+        <button mat-menu-item><a href="PHP2-en">PHP2</a></button>
+        <button mat-menu-item><a href="Project-digitaal-portfolio-en"> Digitaal portfolio</a></button>
+        <button mat-menu-item><a href="Mondelinge-Communicatie-en"> Mondelinge Communicatie</a></button>
+        <button mat-menu-item><a href="WIS1-en">Wiskunde</a></button>
+        <button mat-menu-item><a href="Schriftelijke-Communicatie-en"> Schriftelijke Communicatie</a></button>
+        <button mat-menu-item><a href="Java1-en"> Java 1</a></button>
+        <button mat-menu-item><a href="Netwerken1-en">Inleiding Computernetwerken</a></button>
+        <button mat-menu-item><a href="Project-Battle-bot-en">Project Battle bot</a></button>
+        <button mat-menu-item><a href="CSharp1-en">C#</a></button>
+        <button mat-menu-item><a href="Project-Innovate-en">Project Innovate</a></button>
+        <button mat-menu-item><a href="Multimediaproductie-en">Multimediaproductie</a></button>
+    </mat-menu>
+    <button><a href="teachers">Teachers</a></button>
+    <button><a href="Curriculum-en">Curriculum</a></button>
+    <button><a href="notices">Notices</a></button>
+    <button><a href="home-en"><img src="assets/images/united-kingdom-flag-icon-32.png" ></a><a href="home-nl"><img src="assets/images/netherlands-flag-small.png" class="transparent"></a></button>
+</div>
+<!-- mobile menu -->
+<nav>
+    <a href="/"><img class="logo" src="assets/images/Logo_Information-Technology.png" alt="logo"></a> <button class="right open" (click)="toggle('open')"><img src="assets/images/arrow.png" alt="arrow"></button>
+    
+    <ul class="navigation" *ngIf="open">
+        <li><button href="group" (click)="toggle('group')">Group  <img src="assets/images/arrow.png" alt="arrow" ></button>
+            <ul *ngIf="group">
+                <li><a href="group-IT1A">IT1A</a></li>
+                <li><a href="group-IT1B">IT1B</a></li>
+                <li><a href="group-IT1C">IT1C</a></li>
+                <li><a href="group-IT1D">IT1D</a></li>
+                <li><a href="group-IT1E">IT1E</a></li>
+                <li><a href="group-IT1F">IT1F</a></li>
+            </ul>
+        </li>
+        <li><button href="schedule" class="schedule" (click)="toggle('schedule')">Schedule <img src="assets/images/arrow.png" alt="arrow"></button>
+            <ul *ngIf="schedule">
+                <li><a href="schedule-IT1A">IT1A</a></li>
+                <li><a href="schedule-IT1B">IT1B</a></li>
+                <li><a href="schedule-IT1C">IT1C</a></li>
+                <li><a href="schedule-IT1D">IT1D</a></li>
+                <li><a href="schedule-IT1E">IT1E</a></li>
+                <li><a href="schedule-IT1F">IT1F</a></li>
+            </ul>
+        </li>
+        <li><button href="vakken" (click)="toggle('vak')">Classes  <img src="assets/images/arrow.png" alt="arrow"></button>
+            <ul *ngIf="vak">
+                <li><a href="PHP1-en">PHP1</a></li>
+                <li><a href="HTML-en">(X)HTML en CSS</a></li>
+                <li><a href="FED1-en">FED Essentials</a></li>
+                <li><a href="Project-professionele-website-en">Project Professionele website</a></li>
+                <li><a href="Informatiemanagement-en">Informatiemanagement</a></li>
+                <li><a href="SLB1A-en">SLB1A</a></li>
+                <li><a href="Database1-en">Inleiding Databases</a></li>
+                <li><a href="PHP2-en">Unleash your potential in PHP</a></li>
+                <li><a href="Project-digitaal-portfolio-en">Digitale Portfolio</a></li>
+                <li><a href="Mondelinge-Communicatie-en">Mondelinge Communicatie</a></li>
+                <li><a href="WIS1-en">Basiswiskunde</a></li>
+                <li><a href="Schriftelijke-Communicatie-en">Schriftelijke Communicatie 1</a></li>
+                <li><a href="Java1-en">Inleiding programmeren in Java</a></li>
+                <li><a href="Netwerken1-en">Inleiding Computernetwerken</a></li>
+                <li><a href="Project-Battle-bot-en">Project Battle bot</a></li>
+                <li><a href="CSharp1-en">Module C#</a></li>
+                <li><a href="Project-Innovate-en">Project Innovate</a></li>
+                <li><a href="Multimediaproductie-en">Multimediaproductie</a></li>
+            </ul>
+        </li>
+        <li><a href="teachers">Teachers</a></li>
+        <li><a href="Curriculum-en">Curriculum</a></li>
+        <li><a href="Notices">Notices</a></li>
+        <li><a href="home-en"><img src="assets/images/united-kingdom-flag-icon-32.png" ></a></li>
+        <li><a href="home-nl"><img src="assets/images/netherlands-flag-small.png" class="transparent"></a></li>
+    </ul>
+</nav>

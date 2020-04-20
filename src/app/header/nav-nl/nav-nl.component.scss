@@ -1,58 +1,32 @@
-nav{
-height: 100vh;
-.mobile{
-    display: none;
-    @media (min-width: 500px) {
-        display: inline;
-    }
-}
-color: #495057;
-        background-color:white;
-        .navigation{
-            display: block;
-        }
-        ul{
-            padding: 0;
-            margin: 0;
-        }
-        li{
-            list-style: none;
-            padding-left: 10px;
-            border-bottom: thin #005AAA solid;
-            img{
-                width: 20px;
-            }
-        }
+// nav{
+//     // @media (min-width: 500px){
+//     //     display: none;
         
-        .right{
-            float: right;
-            padding-right: 10px;
-        }
-}
-
-a, button{
-    padding: 0;
-    background: none;
-    margin: 10px;
-    color: #495057;
-    &:hover{
-        color: #495057;
-        opacity: 0.8;
-    }
-    font-weight: bold;
-    text-decoration: none;
-    font-family: calibri,sans-serif;
-    font-weight: 700;
-    @media (min-width:500px) {
-        font-size:15px;
-        text-decoration: none;
-    }
-    font-size: 25px;
-    font-style: normal;
-    margin: 0;
-    
-}
-
+//     // }
+//         background-color: white;
+//         .navigation{
+//             display: block;
+//         }
+//         ul{
+//             padding: 0;
+//             margin: 0;
+            
+//         }
+//         li{
+            
+//             list-style: none;
+//             padding-left: 10px;
+//             border-bottom: thin #005AAA solid;
+//             img{
+//                 width: 20px;
+//             }
+//         }
+        
+//         .right{
+//             float: right;
+//             padding-right: 10px;
+//         }
+// }
 
 // a, button{
 //     padding: 0;
@@ -108,19 +82,6 @@ a, button{
 //     font-size: 15px;
 // }
 
-.logo{
-    height: 100%;
-}
-
-.transparent{
-    opacity: 0.5;
-}
-
-.flag{
-    height: 20px;
-    padding: 5px;
-}
-.container{
-    background-color: #005AAA;
-}
-
+// .transparent{
+//     opacity: 0.5;
+// }
