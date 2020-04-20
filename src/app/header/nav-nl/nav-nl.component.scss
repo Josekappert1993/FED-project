@@ -53,60 +53,52 @@ a, button{
     
 }
 
+#top-nav{
+    width:  100%;
+    height: 50px;
+    background: rgb(255,255,255);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
 
-// a, button{
-//     padding: 0;
-//     margin: 10px;
-//     color: #005AAA;
-//     font-weight: bold;
-//     text-decoration: none;
-//     font-family: calibri,sans-serif;
-//     font-weight: 700;
-//     @media (min-width:500px) {
-//         font-size:15px;
-//     }
-//     font-size: 25px;
-//     font-style: normal;
-//     border: none;
-//     background-color: white;
-//     margin: 0;
-    
-// }
+#center-nav{
+    height: calc(100vh - 102px);
+    overflow: auto;
+    background: rgb(245,245,245);
+}
+#center-nav > a > .list-group-item{
+    cursor: pointer;
+    background: none;
+}
+#center-nav > a{
+    text-decoration: none;
+}
+#center-nav > a:hover{
+    background: rgb(255,255,255);
+    opacity: 1.0;
+}
+.arrow{
+    height: 10px;
+    margin-top: 8px;
+    float: right;
+}
 
-// .logo{
-//     width: 200px;
-// }
+#bottom-nav{
+    width:  100%;
+    height: 50px;
+    padding: 12.5px;
+    bottom: 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+#bottom-nav > a > img{
+    height: 25px;
+    width: 35px;
+    opacity: 1.0;
+}
 
-// .desktop-menu{
-//     @media (max-width: 500px){
-//     display: none;
-//     }
-//     font-size: 15px;
-//     button{
-//         float: left;
-//         padding: 20px;
-//         background: none;
-//         font-size: 20px;
-//         img{
-//             width: 20px;
-//         }
-//         a{
-//             padding-left: 10px;
-//             font-size: 20px;
-//         }
-//     }
-//     a{
-//         float: left;
-//     }
-    
-// }
-
-// button.mat-menu-item {
-//     width: 100%;
-//     padding-left: 10px;
-//     word-break: break-all;
-//     font-size: 15px;
-// }
+.open{
+    border:none;
+    background-color: none;
+}
 
 .logo{
     height: 100%;
@@ -123,4 +115,3 @@ a, button{
 .container{
     background-color: #005AAA;
 }
-

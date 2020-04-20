@@ -30,3 +30,21 @@ $FED-project-theme: mat-light-theme($FED-project-primary, $FED-project-accent, $
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+html {
+    height: 100%;
+    background-color: #005AAA;
+}
+
+body{
+    height: auto!important;
+    min-height: 100%;
+    padding: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #005AAA;
+}
+
