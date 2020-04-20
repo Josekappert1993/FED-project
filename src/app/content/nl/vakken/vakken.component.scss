@@ -1,0 +1,43 @@
+.block{
+    background-color: white;
+    width: 210px;
+    margin: 40px;
+    text-align: center;
+    
+    box-shadow: 10px 10px #029cab;
+    a{
+        margin: auto;
+    }
+    img{
+        max-height: 80px;
+    }
+    text-decoration: none;
+    color: #005AAA;
+    &:hover {
+        border-radius: 10px;
+      }
+    .rotate {
+        transition: all 5s ease-in-out;
+      }
+      .rotate:hover {
+        transition: all 5s ease-in-out;
+      }
+}
+
+.box {
+  margin: 50px auto;
+  background: #5FCF80;
+  width: 150px;
+  height: 150px;
+}
+.box:hover {
+  transform: rotate(360deg);
+  background: #9351A6;
+  border-radius: 50%;
+}
+.rotate {
+  transition: all 0.5s ease-in-out;
+}
+.rotate:hover {
+  transition: all 1s ease-in-out;
+}
