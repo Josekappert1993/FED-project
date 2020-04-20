@@ -1,14 +1,23 @@
 .block{
     background-color: white;
     width: 210px;
-    height: 160px;
+    height: auto;
     margin: 40px;
     text-align: center;
-    padding: 4em;
+    box-shadow: 10px 10px #029cab;
+    a{
+        margin: auto;
+    }
+    .category{
+        padding-top: 15px;
+    }
+    img{
+        padding: 0 0 15px 0;
+        max-width: 150px;
+    }
     text-decoration: none;
     color: #005AAA;
-    box-shadow: 10px 10px #029cab;
     &:hover{
-        opacity: 0.5;
+        opacity: 0.9;
     }
 }
