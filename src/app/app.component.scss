@@ -1,38 +1,9 @@
-html{
-    background-color: #005AAA;
-}
+@import '~bootstrap/dist/css/bootstrap.min.css';
 *{
     padding: 0;
     margin: 0;
     font-family: calibri,sans-serif;
     font-weight: 700;
     font-style: normal;
-    background-color: #005AAA;
-    height: 100%;
-    background-size: cover;
-    color: white;
 }
 
-
-.container, .row{
-    height: 100%;
-    max-width: 100%;
-    position: absolute;
-    bottom: 0;
-    padding: 0;
-    background-color: #005AAA;
-}
-
-.block{
-    background-color: white;
-    width: 210px;
-    height: 160px;
-    margin: 40px;
-    text-align: center;
-    padding: 4em;
-    text-decoration: none;
-    color: #005AAA;
-    &:hover{
-        opacity: 0.5;
-    }
-}
