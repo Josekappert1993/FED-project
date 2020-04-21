@@ -128,6 +128,12 @@ const appRoutes: Routes = [
   },
   {
     path: 'studieopbouw-en', component:CurriculumEnComponent
+  },
+  {
+    path: 'boekenlijst-en', component:BoekenlijstEnComponent
+  },
+  {
+    path: 'uitstroom-profielen-en', component: UitstroomProfielenEnComponent
   }
 ];
 @NgModule({
