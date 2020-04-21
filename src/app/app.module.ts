@@ -50,6 +50,8 @@ import { TeachersComponent } from './content/en/teachers/teachers.component';
 import { BoekenlijstComponent } from './content/nl/boekenlijst/boekenlijst.component';
 import { OnderwijsvormComponent } from './content/nl/onderwijsvorm/onderwijsvorm.component';
 import { UitstroomProfielenComponent } from './content/nl/uitstroom-profielen/uitstroom-profielen.component';
+import { UitstroomProfielenEnComponent } from './content/en/uitstroom-profielen-en/uitstroom-profielen-en.component';
+import { BoekenlijstEnComponent } from './content/en/boekenlijst-en/boekenlijst-en.component';
 const appRoutes: Routes = [
   {
     path: '', component:HomeNlComponent
@@ -164,7 +166,7 @@ const appRoutes: Routes = [
     path: 'announcements', component: AnnouncementsComponent
   },
   {    
-    path: 'Curriculum-en', component:CurriculumEnComponent
+    path: 'onderwijsvorm-en', component:CurriculumEnComponent
   }
 ];
 @NgModule({
@@ -209,7 +211,9 @@ const appRoutes: Routes = [
     TeachersComponent,
     BoekenlijstComponent,
     OnderwijsvormComponent,
-    UitstroomProfielenComponent
+    UitstroomProfielenComponent,
+    UitstroomProfielenEnComponent,
+    BoekenlijstEnComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes, {enableTracing: true}),
