@@ -13,6 +13,14 @@
     box-shadow: 10px 10px #029cab;
     
 }
+
+#content-wrapper{
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
 .openingstijden{
     background-color: white;
     width: 210px;
