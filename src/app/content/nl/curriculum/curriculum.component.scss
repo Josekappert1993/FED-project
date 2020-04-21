@@ -1,7 +1,7 @@
 .block{
     background-color: white;
     width: 210px;
-    height: 160px;
+    height: auto;
     margin: 40px;
     text-align: center;
     
@@ -9,14 +9,21 @@
     a{
         margin: auto;
     }
+    p{
+        padding: 15px 0 0 0;
+    }
     img{
-        max-height: 80px;
+        padding: 0 0 20px 0;
+        max-width: 150px;
     }
     text-decoration: none;
     color: #005AAA;
     &:hover{
         opacity: 0.9;
     }
+}
+a:hover{
+    text-decoration: none;
 }
 
 #content-wrapper{
