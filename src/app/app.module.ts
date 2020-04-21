@@ -4,7 +4,6 @@ import { NgModule, Component } from '@angular/core';
 import { MatMenuModule, MatExpansionModule } from '@angular/material';
 
 import { RouterModule, Routes } from '@angular/router';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CurriculumComponent } from './content/nl/curriculum/curriculum.component';
@@ -80,6 +79,9 @@ const appRoutes: Routes = [
   },
   {    
     path: 'studieopbouw-nl', component:CurriculumComponent
+  },
+  {
+    path: 'uitstroom-profielen', component: UitstroomProfielenComponent
   },
   {
     path: 'onderwijsvorm', component:OnderwijsvormComponent
