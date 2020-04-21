@@ -18,11 +18,6 @@ import { KlasINF1BComponent } from './content/nl/klassen/klas-inf1-b/klas-inf1-b
 import { KlasINF1CComponent } from './content/nl/klassen/klas-inf1-c/klas-inf1-c.component';
 import { KlasINF1DComponent } from './content/nl/klassen/klas-inf1-d/klas-inf1-d.component';
 import { KlasINF1EComponent } from './content/nl/klassen/klas-inf1-e/klas-inf1-e.component';
-import { KlasINF1FComponent } from './content/nl/klassen/klas-inf1-f/klas-inf1-f.component';
-import { KlasINF1GComponent } from './content/nl/klassen/klas-inf1-g/klas-inf1-g.component';
-import { KlasINF1HComponent } from './content/nl/klassen/klas-inf1-h/klas-inf1-h.component';
-import { KlasINF1IComponent } from './content/nl/klassen/klas-inf1-i/klas-inf1-i.component';
-import { KlasINF1JComponent } from './content/nl/klassen/klas-inf1-j/klas-inf1-j.component';
 import { RoostersComponent } from './content/nl/roosters/roosters.component';
 import { VakkenComponent } from './content/nl/vakken/vakken.component';
 import { DocentenComponent } from './content/nl/docenten/docenten.component';
@@ -35,12 +30,6 @@ import { GroupIT1BComponent } from './content/en/groups/group-it1-b/group-it1-b.
 import { GroupIT1CComponent } from './content/en/groups/group-it1-c/group-it1-c.component';
 import { GroupIT1DComponent } from './content/en/groups/group-it1-d/group-it1-d.component';
 import { GroupIT1EComponent } from './content/en/groups/group-it1-e/group-it1-e.component';
-import { GroupIT1F1Component } from './content/en/groups/group-it1-f1/group-it1-f1.component';
-import { GroupIT1F2Component } from './content/en/groups/group-it1-f2/group-it1-f2.component';
-import { GroupIT1GComponent } from './content/en/groups/group-it1-g/group-it1-g.component';
-import { GroupIT1HComponent } from './content/en/groups/group-it1-h/group-it1-h.component';
-import { GroupIT1IComponent } from './content/en/groups/group-it1-i/group-it1-i.component';
-import { GroupIT1JComponent } from './content/en/groups/group-it1-j/group-it1-j.component';
 import { CurriculumEnComponent } from './content/en/curriculum-en/curriculum-en.component';
 import { ClassesComponent } from './content/en/classes/classes.component';
 import { CompetentiesComponent } from './content/nl/competenties/competenties.component';
@@ -76,21 +65,6 @@ const appRoutes: Routes = [
   },
   {
     path: 'klas-INF1E', component:KlasINF1EComponent
-  },
-  {
-    path: 'klas-INF1F', component:KlasINF1FComponent
-  },
-  {
-    path: 'klas-INF1G', component:KlasINF1GComponent
-  },
-  {
-    path: 'klas-INF1H', component:KlasINF1HComponent
-  },
-  {
-    path: 'klas-INF1I', component:KlasINF1IComponent
-  },
-  {
-    path: 'klas-INF1J', component:KlasINF1JComponent
   },
   {
     path: 'roosters', component:RoostersComponent
@@ -139,24 +113,6 @@ const appRoutes: Routes = [
     path: 'group-IT1E', component:GroupIT1EComponent
   },
   {
-    path: 'group-IT1F1', component:GroupIT1F1Component
-  },
-  {
-    path: 'group-IT1F2', component:GroupIT1F2Component
-  },
-  {
-    path: 'group-IT1G', component:GroupIT1GComponent
-  },
-  {
-    path: 'group-IT1H', component:GroupIT1HComponent
-  },
-  {
-    path: 'group-IT1I', component:GroupIT1IComponent
-  },
-  {
-    path: 'group-IT1J', component:GroupIT1JComponent
-  },
-  {
     path: 'schedules', component: SchedulesComponent
   },
   {
@@ -183,11 +139,6 @@ const appRoutes: Routes = [
     KlasINF1CComponent,
     KlasINF1DComponent,
     KlasINF1EComponent,
-    KlasINF1FComponent,
-    KlasINF1GComponent,
-    KlasINF1HComponent,
-    KlasINF1IComponent,
-    KlasINF1JComponent,
     RoostersComponent,
     VakkenComponent,
     DocentenComponent,
@@ -198,12 +149,6 @@ const appRoutes: Routes = [
     GroupIT1CComponent,
     GroupIT1DComponent,
     GroupIT1EComponent,
-    GroupIT1F1Component,
-    GroupIT1F2Component,
-    GroupIT1GComponent,
-    GroupIT1HComponent,
-    GroupIT1IComponent,
-    GroupIT1JComponent,
     CurriculumEnComponent,
     CompetentiesComponent,
     SchedulesComponent,
