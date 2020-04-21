@@ -25,18 +25,10 @@ import { KlasINF1IComponent } from './content/nl/klassen/klas-inf1-i/klas-inf1-i
 import { KlasINF1JComponent } from './content/nl/klassen/klas-inf1-j/klas-inf1-j.component';
 import { RoostersComponent } from './content/nl/roosters/roosters.component';
 import { VakkenComponent } from './content/nl/vakken/vakken.component';
-import { PHP1Component } from './content/nl/vakken/php1/php1.component';
-import { CSharp1Component } from './content/nl/vakken/csharp1/csharp1.component';
-import { Database1Component } from './content/nl/vakken/database1/database1.component';
-import { FED1Component } from './content/nl/vakken/fed1/fed1.component';
-import { HTMLComponent } from './content/nl/vakken/html/html.component';
-import { InformatiemanagementComponent } from './content/nl/vakken/informatiemanagement/informatiemanagement.component';
-import { Java1Component } from './content/nl/vakken/java1/java1.component';
-import { MondelingeCommunicatieComponent } from './content/nl/vakken/mondelinge-communicatie/mondelinge-communicatie.component';
-import { MultimediaproductieComponent } from './content/nl/vakken/multimediaproductie/multimediaproductie.component';
 import { DocentenComponent } from './content/nl/docenten/docenten.component';
 import { MededelingenComponent } from './content/nl/mededelingen/mededelingen.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { GroupsComponent } from './content/en/groups/groups.component';
 import { GroupIT1AComponent } from './content/en/groups/group-it1-a/group-it1-a.component';
 import { GroupIT1BComponent } from './content/en/groups/group-it1-b/group-it1-b.component';
@@ -50,18 +42,11 @@ import { GroupIT1HComponent } from './content/en/groups/group-it1-h/group-it1-h.
 import { GroupIT1IComponent } from './content/en/groups/group-it1-i/group-it1-i.component';
 import { GroupIT1JComponent } from './content/en/groups/group-it1-j/group-it1-j.component';
 import { CurriculumEnComponent } from './content/en/curriculum-en/curriculum-en.component';
-
 import { ClassesComponent } from './content/en/classes/classes.component';
-import { Netwerken1Component } from './content/nl/vakken/netwerken1/netwerken1.component';
-import { PHP2Component } from './content/nl/vakken/php2/php2.component';
-import { ProjectBattleBotComponent } from './content/nl/vakken/project-battle-bot/project-battle-bot.component';
-import { ProjectDigitaalPortfolioComponent } from './content/nl/vakken/project-digitaal-portfolio/project-digitaal-portfolio.component';
-import { ProjectInnovateComponent } from './content/nl/vakken/project-innovate/project-innovate.component';
-import { ProjectProfessioneleWebsiteComponent } from './content/nl/vakken/project-professionele-website/project-professionele-website.component';
-import { SchriftelijkeCommunicatieComponent } from './content/nl/vakken/schriftelijke-communicatie/schriftelijke-communicatie.component';
-import { SLB1AComponent } from './content/nl/vakken/slb1-a/slb1-a.component';
-import { WIS1Component } from './content/nl/vakken/wis1/wis1.component';
 import { CompetentiesComponent } from './content/nl/competenties/competenties.component';
+import { SchedulesComponent } from './content/en/schedules/schedules.component';
+import { AnnouncementsComponent } from './content/en/announcements/announcements.component';
+import { TeachersComponent } from './content/en/teachers/teachers.component';
 const appRoutes: Routes = [
   {
     path: '', component:HomeNlComponent
@@ -108,60 +93,6 @@ const appRoutes: Routes = [
   {
     path: 'vakken', component:VakkenComponent
   },
-  {
-    path: 'CSharp1', component: CSharp1Component
-  },
-  {
-    path: 'Database1', component: Database1Component
-  },
-  {
-    path: 'FED1', component: FED1Component
-  },
-  {
-    path: 'HTML', component: HTMLComponent
-  },
-  {
-    path: 'Informatiemanagement', component: InformatiemanagementComponent
-  },
-  {
-    path: 'Java1', component: Java1Component
-  },
-  {
-    path: 'Mondelinge-Communicatie', component: MondelingeCommunicatieComponent
-  },
-  {
-    path: 'Multimediaproductie', component: MultimediaproductieComponent
-  },
-  {
-    path: 'Netwerken1', component: Netwerken1Component
-  },
-  {
-    path: 'PHP1', component:PHP1Component
-  },
-  {
-    path: 'PHP2', component:PHP2Component
-  },
-  {
-    path: 'Project-Battle-bot', component:ProjectBattleBotComponent
-  },
-  {
-    path: 'Project-digitaal-portfolio', component:ProjectDigitaalPortfolioComponent
-  },
-  {
-    path: 'Project-Innovate', component:ProjectInnovateComponent
-  },
-  {
-    path: 'Project-professionele-website', component: ProjectProfessioneleWebsiteComponent
-  },
-  {
-    path: 'Schriftelijke-Communicatie', component: SchriftelijkeCommunicatieComponent
-  },
-  {
-    path: 'SLB1A', component: SLB1AComponent
-  },
-  {
-    path: 'WIS1', component: WIS1Component
-  },
   {    
     path: 'docenten', component:DocentenComponent
   },
@@ -181,10 +112,51 @@ const appRoutes: Routes = [
   {
     path: 'group-en', component:GroupsComponent
   },
+  {
+    path: 'group-IT1A', component:GroupIT1AComponent
+  },
+  {
+    path: 'group-IT1B', component:GroupIT1BComponent
+  },
+  {
+    path: 'group-IT1C', component:GroupIT1CComponent
+  },
+  {
+    path: 'group-IT1D', component:GroupIT1DComponent
+  },
+  {
+    path: 'group-IT1E', component:GroupIT1EComponent
+  },
+  {
+    path: 'group-IT1F1', component:GroupIT1F1Component
+  },
+  {
+    path: 'group-IT1F2', component:GroupIT1F2Component
+  },
+  {
+    path: 'group-IT1G', component:GroupIT1GComponent
+  },
+  {
+    path: 'group-IT1H', component:GroupIT1HComponent
+  },
+  {
+    path: 'group-IT1I', component:GroupIT1IComponent
+  },
+  {
+    path: 'group-IT1J', component:GroupIT1JComponent
+  },
+  {
+    path: 'schedules', component: SchedulesComponent
+  },
+  {
+    path: 'teachers', component: TeachersComponent
+  },
+  {
+    path: 'announcements', component: AnnouncementsComponent
+  },
   {    
     path: 'Curriculum-en', component:CurriculumEnComponent
   }
-
 ];
 @NgModule({
   declarations: [
@@ -207,25 +179,6 @@ const appRoutes: Routes = [
     KlasINF1JComponent,
     RoostersComponent,
     VakkenComponent,
-    CSharp1Component,
-    Database1Component,
-    FED1Component,
-    HTMLComponent,
-    InformatiemanagementComponent,
-    Java1Component,
-    MondelingeCommunicatieComponent,
-    MondelingeCommunicatieComponent,
-    MultimediaproductieComponent,
-    Netwerken1Component,
-    PHP1Component,
-    PHP2Component,
-    ProjectBattleBotComponent,
-    ProjectDigitaalPortfolioComponent,
-    ProjectInnovateComponent,
-    ProjectProfessioneleWebsiteComponent,
-    SchriftelijkeCommunicatieComponent,
-    SLB1AComponent,
-    WIS1Component,
     DocentenComponent,
     MededelingenComponent,
     GroupsComponent,
@@ -241,7 +194,10 @@ const appRoutes: Routes = [
     GroupIT1IComponent,
     GroupIT1JComponent,
     CurriculumEnComponent,
-    CompetentiesComponent
+    CompetentiesComponent,
+    SchedulesComponent,
+    AnnouncementsComponent,
+    TeachersComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes, {enableTracing: true}),
