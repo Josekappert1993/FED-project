@@ -47,6 +47,11 @@ import { CompetentiesComponent } from './content/nl/competenties/competenties.co
 import { SchedulesComponent } from './content/en/schedules/schedules.component';
 import { AnnouncementsComponent } from './content/en/announcements/announcements.component';
 import { TeachersComponent } from './content/en/teachers/teachers.component';
+import { BoekenlijstComponent } from './content/nl/boekenlijst/boekenlijst.component';
+import { OnderwijsvormComponent } from './content/nl/onderwijsvorm/onderwijsvorm.component';
+import { UitstroomProfielenComponent } from './content/nl/uitstroom-profielen/uitstroom-profielen.component';
+import { UitstroomProfielenEnComponent } from './content/en/uitstroom-profielen-en/uitstroom-profielen-en.component';
+import { BoekenlijstEnComponent } from './content/en/boekenlijst-en/boekenlijst-en.component';
 const appRoutes: Routes = [
   {
     path: '', component:HomeNlComponent
@@ -100,7 +105,13 @@ const appRoutes: Routes = [
     path: 'mededelingen', component:MededelingenComponent
   },
   {    
-    path: 'Curriculum-nl', component:CurriculumComponent
+    path: 'studieopbouw-nl', component:CurriculumComponent
+  },
+  {
+    path: 'onderwijsvorm', component:OnderwijsvormComponent
+  },
+  {    
+    path: 'boekenlijst', component:BoekenlijstComponent
   },
   {
     path: 'Competenties', component:CompetentiesComponent
@@ -155,7 +166,7 @@ const appRoutes: Routes = [
     path: 'announcements', component: AnnouncementsComponent
   },
   {    
-    path: 'Curriculum-en', component:CurriculumEnComponent
+    path: 'onderwijsvorm-en', component:CurriculumEnComponent
   }
 ];
 @NgModule({
@@ -197,7 +208,12 @@ const appRoutes: Routes = [
     CompetentiesComponent,
     SchedulesComponent,
     AnnouncementsComponent,
-    TeachersComponent
+    TeachersComponent,
+    BoekenlijstComponent,
+    OnderwijsvormComponent,
+    UitstroomProfielenComponent,
+    UitstroomProfielenEnComponent,
+    BoekenlijstEnComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes, {enableTracing: true}),
