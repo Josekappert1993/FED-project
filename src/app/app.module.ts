@@ -125,6 +125,9 @@ const appRoutes: Routes = [
   },
   {    
     path: 'onderwijsvorm-en', component:CurriculumEnComponent
+  },
+  {
+    path: 'studieopbouw-en', component:CurriculumEnComponent
   }
 ];
 @NgModule({
